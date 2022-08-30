@@ -37,7 +37,7 @@ const handleChange = (e)=> {
         if(!e.target.value.length){
             setErrorMessage(`${e.target.name} is required.`)
         } else{
-            setErrorMessage('');
+            setErrorMessage('Input required');
         }
      }
 }
@@ -51,18 +51,18 @@ return (
             {/* name inpurt */}
             <div>
                 <label htmlFor="name">Name</label>
-                <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                <input type="text" name="Name" defaultValue={name} onBlur={handleChange} />
             </div>
             
             {/* email input */}
             <div>
                 <label htmlFor="email">Email address</label>
-                <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                <input type="email" name="Email" defaultValue={email} onBlur={handleChange} />
             </div>
             {/* message test area */}
             <div>
                 <label htmlFor="message">Message</label>
-                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                <textarea  name="Message" defaultValue={message} onBlur={handleChange} rows="5" />
                 {errorMessage && (
                     <div>
                         <p className="error-text">
