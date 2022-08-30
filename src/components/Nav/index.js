@@ -13,8 +13,7 @@ function Nav (props){
         categories = [],
         currentCategory,
         setCurrentCategory,
-        setContactSelected,
-        contactSelected
+       
     }= props;
 
     // useEffect(()=> {
@@ -29,38 +28,18 @@ function Nav (props){
     
 
     return(
-        <header>
-            <h2>       
-                <a data-testid= "link" href ="/">
-                    <span role="img" aria-label="camera">📸</span> Kevin Friday Portfolio
-                </a>   
-            </h2>     
-            <nav>
+        <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a 
-                        data-testid ='about'
-                         href="#about" onClick={()=> setContactSelected(false)}
-                         >
-                            About me 
-                        </a>
-                    </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={()=> setContactSelected(true)}>
-                            Contact
-                        </span>
-                    </li>
-                
-                     {
+                    {
                         categories.map((category) => (
                         <li className={`mx-1 ${
-                            currentCategory.name === category.name && !contactSelected && 'navActive'
+                            currentCategory.name === category.name && 'navActive'
                         }`}key={category.name}>
 
                             <span 
                             onClick={()=> {
                                 setCurrentCategory(category)
-                                setContactSelected(false)
+                                console.log(category)
                             }}
                             >
                             {capitalizeFirstLetter(category.name)}
@@ -69,10 +48,11 @@ function Nav (props){
                         </li>
                         ))
                     }
+                
+                    
                     
                 </ul>
             </nav>
-        </header>
     );
 }
 
