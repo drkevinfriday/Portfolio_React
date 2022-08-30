@@ -4,7 +4,7 @@ import coverImage from "../../assets/images/ProfilePic.jpg"
 function About() {
   return (
  <section className='my-5'>
-    <h1 id="about">Who am I?</h1>
+    <h1 id="about"></h1>
     <img src={coverImage} className="my-2" style={{width:"100%"}} alt="cover" />
     <section class="my-story" >
         <h3 class="section-title" id="my-story">MY STORY</h3>
