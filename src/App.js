@@ -2,8 +2,8 @@ import React , {useState} from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
-// import Resume from './components/Resume';
-// import Gallery from './components/Gallery'
+import Resume from './components/Resume';
+import Gallery from './components/Gallery'
 import Header from './components/Header';
 // import Footer from './components/Footer';
 
@@ -44,13 +44,24 @@ function App() {
       setResumeSelected ={setResumeSelected}
       ></Nav>
       <main>
-        {!contactSelected ? (
+        {currentCategory.name === "Contact"  ? (
         <>
-        {/* <Gallery currentCategory={currentCategory}></Gallery> */}
-        <About></About>
+        <ContactForm></ContactForm>
+        </>
+      ):(currentCategory.name === "Resume"  ? (
+        <>
+        <Resume></Resume>
+        </>
+      ):(currentCategory.name === "Projects"  ? (
+        <>
+        <Gallery></Gallery>
         </>
       ):(
-        <ContactForm></ContactForm>
+        
+        <About></About>
+        )
+        
+        )
         )}
       </main>
     </div>
