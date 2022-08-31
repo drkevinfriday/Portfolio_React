@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 90s linear;
@@ -52,7 +53,9 @@
   font-size: inherit;
   margin: 0;
 }
-
+/* .social-links{
+  display: inline;
+} */
 .Example__container {
   display: flex;
   flex-direction: column;

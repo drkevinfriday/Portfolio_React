@@ -5,7 +5,7 @@ import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Gallery from './components/Gallery'
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
   const  [categories] = useState([
     { name: 'About', description: 'Portraits of people in my life' },
     { name: 'Contact', description: 'Portraits of people in my life' },
-    { name: 'Projects', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
+    { name: 'Projects', description: 'Shows the ' },
     { name: 'Resume', description: 'Portraits of people in my life' },
   ]);
 
@@ -64,6 +64,7 @@ function App() {
         )
         )}
       </main>
+      <Footer></Footer>
     </div>
 
   );

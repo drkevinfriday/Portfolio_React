@@ -306,3 +306,18 @@ a {
 .navActive {
   color: var(--secondary);
 }
+#connect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.list{
+ display: flex;
+  
+  
+}
+
+.listItems{
+  margin:20px;
+}
