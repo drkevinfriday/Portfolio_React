@@ -137,7 +137,7 @@ function Gallery (props){
         
   
         // testing here
-        backgroundColor: "rgb(249, 247, 241)",
+        backgroundColor: "black",
         alignItems: 'center'
         
       }}
@@ -179,9 +179,9 @@ function Gallery (props){
                 textAlign: 'center',
                 marginTop: '0',
   
-                fontStyle: 'italic',
+               
                 opacity: '0.7',
-                fontFamily: 'Ogg',
+                fontFamily: 'sans',
                 fontSize: '80px',
                 letterSpacing: '-10px',
                 textTransform: 'lowercase', 
@@ -233,7 +233,7 @@ function Gallery (props){
                 marginTop: '0px',
                 transform: `translate3d(0px, -${offset/100}px, 0px)`,
                 transition: 'transform 0.5s ease-in-out',
-                background: 'transparent',
+              
                 position: 'bottom',
               }}
               />

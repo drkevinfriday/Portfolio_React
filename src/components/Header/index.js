@@ -22,9 +22,10 @@ function Header (){
     //   };
     return(
         <section>
-            <h1>       
+            <h1 class="title">       
                 <a data-testid= "link" href ="/">
-                    <span role="img" aria-label="title"></span> Kevin Friday Portfolio
+                    <span className="title
+                "  aria-label="title"></span> Kevin Friday Portfolio
                 </a>   
             </h1>     
             <Nav></Nav>

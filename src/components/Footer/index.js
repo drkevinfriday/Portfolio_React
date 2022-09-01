@@ -6,9 +6,9 @@ import { SocialIcon } from 'react-social-icons';
  function Footer() {
   return (
     <section class="container" id="connect">
-    <h3 class=" row section-title connect-color">CONNECT</h3>
-    <div class="links">
-        <ul class="row mr-20">
+    <h3 class="section-title connect-color">CONNECT</h3>
+    <div >
+        <ul class="list">
             {/* <!-- List item element --> */}
             <li class='listItems'>
                 <SocialIcon url="https://twitter.com/" />
