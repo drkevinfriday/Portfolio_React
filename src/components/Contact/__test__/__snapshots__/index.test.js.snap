@@ -18,7 +18,7 @@ exports[`Contact component renders renders 1`] = `
           Name
         </label>
         <input
-          name="name"
+          name="Name"
           type="text"
           value=""
         />
@@ -30,7 +30,7 @@ exports[`Contact component renders renders 1`] = `
           Email address
         </label>
         <input
-          name="email"
+          name="Email"
           type="email"
           value=""
         />
@@ -42,7 +42,7 @@ exports[`Contact component renders renders 1`] = `
           Message
         </label>
         <textarea
-          name="message"
+          name="Message"
           rows="5"
         />
       </div>

@@ -4,55 +4,25 @@ exports[`Contact component renders renders 1`] = `
 <DocumentFragment>
   <section>
     <h1
-      data-testid="h1tag"
+      class="title"
     >
-      Contact me
-    </h1>
-    <form
-      id="contact-form"
-    >
-      <div>
-        <label
-          for="name"
-        >
-          Name
-        </label>
-        <input
-          name="name"
-          type="text"
-          value=""
-        />
-      </div>
-      <div>
-        <label
-          for="email"
-        >
-          Email address
-        </label>
-        <input
-          name="email"
-          type="email"
-          value=""
-        />
-      </div>
-      <div>
-        <label
-          for="message"
-        >
-          Message
-        </label>
-        <textarea
-          name="message"
-          rows="5"
-        />
-      </div>
-      <button
-        data-testid="button"
-        type="submit"
+      <a
+        data-testid="link"
+        href="/"
       >
-        Submit
-      </button>
-    </form>
+        <span
+          aria-label="title"
+          class="title
+ "
+        />
+         Kevin Friday Portfolio
+      </a>
+    </h1>
+    <nav>
+      <ul
+        class="flex-row"
+      />
+    </nav>
   </section>
 </DocumentFragment>
 `;
